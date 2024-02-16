@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Your Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+      flex-direction: column;
+      min-height: 100vh; 
+      margin: 0;
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color:black;
+            text-decoration: none;
+            margin-right: 15px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 10px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+
+        
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:white;
+            font-size:10px;
+          
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+              margin-right: 10px;
+        
+        }
+        .dropdown-content ,li{
+            margin-right: 10px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            margin-right: 10px;
+        
+        }
+
+        main {
+      display: flex;
+      justify-content: space-between;
+      flex: 1; /* Allow the main content to grow and take remaining space */
+      margin-bottom: 20px; /* Adjust the value as needed */
+    }
+
+    #left {
+      flex: 1;
+      padding: 50px;
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+      background-color: white;
+      overflow-y: auto;
+      align-items: left
+      ;
+    }
+.animated-text{
+    color: #000;
+    position: left;
+    top: 100%;
+    left: 100%;
+    transform: translate(-20%,-20%);
+    background: #f0f0f0;
+    padding: 0 40px;
+    height: 100px;
+    width: 400px;
+overflow: hidden;
+
+}
+.line{
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 15px;
+    line-height: 100px;
+}
+.line:first-child{
+    animation: anim 12s infinite;
+}
+@keyframes anim{
+    
+    10%{
+        margin-top: -120px;
+    }
+    15%{
+        margin-top: -133px;
+    }
+    33%{
+        margin-top: -180px;
+    }
+}
+    #right {
+      flex: 1;
+      padding: 20px;
+    }
+
+footer {
+      text-align: center;
+      padding: 10px; /* Adjust the value as needed */
+      background-color: #f0f0f0; /* Optional: Add a background color to the footer */
+    }
+
+    footer a {
+      margin: 0 10px; /* Adjust the value as needed */
+      text-decoration: none;
+      color: #333; /* Optional: Set link color */
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color:black;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: black;
+}
+
+
+
+    .bottom-bar{
+        background:white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Mac App Studio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.macappstudio.com/who_we_are">Who we are?</a></li>
+                
+                <li class="dropdown">
+                    <a href="#">what We Do?</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="https://www.macappstudio.com/appdevelopment">technology consulting</a></li><br>
+                            <li><a href="https://www.macappstudio.com/technology_consulting">app Development</a></li><br>
+                            <li><a href="https://www.macappstudio.com/R_D">Research And Development</a></li><br>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://www.macappstudio.com/success_stories">success stories</a></li>
+                <li><a href="https://www.macappstudio.com/enterprise">Enterprice</a></li>
+            </ul>
+           <button><a href="https://www.macappstudio.com/enterprise">Get a proposal</a></button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="left">
+          <div class="animated-text">
+            <div class="line">Let'sdigitally transform your organization to next level</div>
+            <div class="line">Let's
+                seamlessly take your app idea to the global market
+                </div>
+          </div>
+          <button><a style="text-decoration: none;" href="https://www.macappstudio.com/enterprise">Get a proposal</a></button>
+        </div>
+    
+        <div id="right">
+          <img src="image/rocket.gif" alt="Your GIF">
+        </div>
+      </main>
+    
+      <footer>
+        
+        <a style="text-decoration: none;"  href="https://www.macappstudio.com/appdevelopment">App development</a>
+        <a style="text-decoration: none;"  href="https://www.macappstudio.com/technology_consulting">technology consulting</a>
+        <a style="text-decoration: none;"  href="https://www.macappstudio.com/R_D">Research And Development</a>
+        <div class="footer-content">
+            <h3>MacAppStudio</h3>
+             <ul class="list">
+                <li><a href="https://www.macappstudio.com/who_we_are">Who we are?</a></li>
+                <li><a href="https://www.macappstudio.com/success_stories">success stories</a></li>
+                <li><a href="https://www.macappstudio.com/enterprise">Enterprice</a></li>
+              <li>  <a href="https://www.macappstudio.com/enterprise">Get a proposal</a></li>
+                <li><a href="">Contact</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+            <a href="https://www.linkedin.com/company/macappstudioteam" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCjAwopTaJUR5yXDzjg_8E_A" class="fa fa-youtube"></a>
+        </ul>
+        </div>
+</div>
+<div class="bottom-bar">
+    <p>&copy; MacAppStudio © Copyright 2024 |All Rights Reserved.</p>
+</div>  
+</footer>
+
+</body>
+</html>
